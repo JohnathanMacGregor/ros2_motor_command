@@ -1,0 +1,14 @@
+For the final technical task, I chose to send motor velocity command data
+using the Twist message type in ROS2. In particular, I published forward speed(linear.x), 
+and turning rate values(angular.z), which controls how fast a robot should move forward 
+and how sharp its turns are. 
+I made these values change over time so that the data would closley reflect controller 
+output changing over time, for instance as a robot moves, rather than having unrealistic constant values. 
+The subscriber node receives and prints this data so that one can verify that communication between nodes 
+is working properly. 
+
+In a robotics system, this type of data drives motion and navigation. 
+A controller evaluates velocity commands 
+based on sensor input and navigation target, then sends those commands to the motors. 
+This allows the robot to move,turn, and follow routes. By completing this project, I know understand how ROS 2 handles communication and 
+how control signals move through a robotic system. 
